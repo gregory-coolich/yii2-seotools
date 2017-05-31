@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model jpunanua\seotools\models\base\MetaBase */
+/* @var $model ryhor123\seotools\models\base\MetaBase */
 
 $this->title = Yii::t('seotools', 'Update {modelClass}: ', [
     'modelClass' => 'Meta Base',

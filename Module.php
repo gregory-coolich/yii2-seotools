@@ -1,10 +1,10 @@
 <?php
 
-namespace jpunanua\seotools;
+namespace ryhor123\seotools;
 
 class Module extends \yii\base\Module
 {
-    public $controllerNamespace = 'jpunanua\seotools\controllers';
+    public $controllerNamespace = 'ryhor123\seotools\controllers';
 
     /**
      * @var array the list of rights that are allowed to access this module.

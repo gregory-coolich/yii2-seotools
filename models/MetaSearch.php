@@ -1,14 +1,14 @@
 <?php
 
-namespace jpunanua\seotools\models;
+namespace ryhor123\seotools\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use jpunanua\seotools\models\base\MetaBase;
+use ryhor123\seotools\models\base\MetaBase;
 
 /**
- * MetaSearch represents the model behind the search form about `jpunanua\seotools\models\base\MetaBase`.
+ * MetaSearch represents the model behind the search form about `ryhor123\seotools\models\base\MetaBase`.
  */
 class MetaSearch extends MetaBase
 {
@@ -19,7 +19,7 @@ class MetaSearch extends MetaBase
     {
         return [
             [['id_meta', 'sitemap'], 'integer'],
-            [['hash', 'route', 'robots_index', 'robots_follow', 'author', 'title', 'keywords', 'description', 'info', 'sitemap_change_freq', 'sitemap_priority', 'created_at', 'updated_at'], 'safe'],
+            [['hash', 'route', 'robots_index', 'robots_follow', 'author', 'title', 'h1_heading', 'description', 'info', 'sitemap_change_freq', 'sitemap_priority', 'created_at', 'updated_at'], 'safe'],
         ];
     }
 
@@ -68,7 +68,7 @@ class MetaSearch extends MetaBase
             ->andFilterWhere(['like', 'robots_follow', $this->robots_follow])
             ->andFilterWhere(['like', 'author', $this->author])
             ->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'keywords', $this->keywords])
+            ->andFilterWhere(['like', 'h1_heading', $this->h1_heading])
             ->andFilterWhere(['like', 'description', $this->description])
             ->andFilterWhere(['like', 'info', $this->info])
             ->andFilterWhere(['like', 'sitemap_change_freq', $this->sitemap_change_freq])

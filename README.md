@@ -15,13 +15,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist jpunanua/yii2-seotools "*"
+php composer.phar require --prefer-dist ryhor123/yii2-seotools "*"
 ```
 
 or add
 
 ```
-"jpunanua/yii2-seotools": "*"
+"ryhor123/yii2-seotools": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -33,12 +33,12 @@ Run the following command in Terminal for database migration:
 
 Linux/Unix:
 ```
-yii migrate/up --migrationPath=@vendor/jpunanua/yii2-seotools/migrations
+yii migrate/up --migrationPath=@vendor/ryhor123/yii2-seotools/migrations
 ```
 
 Windows:
 ```
-yii.bat migrate/up --migrationPath=@vendor/jpunanua/yii2-seotools/migrations
+yii.bat migrate/up --migrationPath=@vendor/ryhor123/yii2-seotools/migrations
 ```
 
 ###Config
@@ -48,7 +48,7 @@ A simple exmple of turning on seotool component.
 ```php
 'components' => [
         'seotools' => [
-            'class' => 'jpunanua\seotools\Component',
+            'class' => 'ryhor123\seotools\Component',
         ],
     ],
 ```
@@ -62,7 +62,7 @@ Simple example:
 ```php
     'modules' => [
         'seotools' => [
-            'class' => 'jpunanua\seotools\Module',
+            'class' => 'ryhor123\seotools\Module',
             'roles' => ['@'], // For setting access levels to the seotools interface.
         ]
     ],
@@ -86,7 +86,7 @@ Yii::$app->seotools->setMeta(['title' => \Yii::t('title','A good title for this 
 You can invalidate the cache save records calling
 
 ```php
-\yii\caching\TagDependency::invalidate(Yii::$app->cache, jpunanua\seotools\Component::CACHE_TAG);
+\yii\caching\TagDependency::invalidate(Yii::$app->cache, ryhor123\seotools\Component::CACHE_TAG);
 ```
 
 ###URLs

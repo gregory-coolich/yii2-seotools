@@ -1,11 +1,11 @@
 <?php
 
-namespace jpunanua\seotools\controllers;
+namespace ryhor123\seotools\controllers;
 
 use Yii;
-use jpunanua\seotools\models\base\MetaBase;
-use jpunanua\seotools\models\MetaSearch;
-use jpunanua\seotools\models\Meta;
+use ryhor123\seotools\models\base\MetaBase;
+use ryhor123\seotools\models\MetaSearch;
+use ryhor123\seotools\models\Meta;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -18,7 +18,7 @@ class ManageController extends Controller
 {
 
     /**
-     * @var \jpunanua\seotools\Module seotool module
+     * @var \ryhor123\seotools\Module seotool module
      */
     public $module;
 

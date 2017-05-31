@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use mihaildev\ckeditor\CKEditor;
 
 /* @var $this yii\web\View */
-/* @var $model jpunanua\seotools\models\base\MetaBase */
+/* @var $model ryhor123\seotools\models\base\MetaBase */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -23,7 +23,7 @@ use mihaildev\ckeditor\CKEditor;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'keywords')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'h1_heading')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 

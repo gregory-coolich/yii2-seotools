@@ -21,7 +21,7 @@ class m141023_143432_table_meta extends Migration
             'robots_follow' => 'ENUM(\'FOLLOW\',\'NOFOLLOW\') NULL',
             'author' => 'VARCHAR(255) NULL',
             'title' => 'VARCHAR(255) NULL',
-            'keywords' => 'TEXT NULL',
+            'h1_heading' => 'TEXT NULL',
             'description' => 'TEXT NULL',
             'info' => 'TEXT NULL',
             'sitemap' => 'TINYINT(1) UNSIGNED NOT NULL DEFAULT \'1\'',
