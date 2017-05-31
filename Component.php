@@ -291,4 +291,33 @@ class Component extends \yii\base\Component
         }
 
     }
+    
+    /**
+     * Получает все данные из таблицы meta в виде массива по route.
+     * Если данные не найдены, то вернёт пустой массив
+     * 
+     * @return array
+     */
+    public function getData()
+    {
+        $data = MetaBase::findOne([
+            'route' => $this->getRoute(),
+        ]);
+        
+        return (null === $data) ? [] : $data->toArray();
+    }
+    
+    /**
+     * Получает поле h1_heading по route
+     * 
+     * @return null|string
+     */
+    public function getH1Heading()
+    {
+        $h1 = MetaBase::find()->select(['h1_heading'])
+                              ->where(['route' => $this->getRoute()])
+                              ->column();
+        
+        return empty($h1) ? null : $h1[0];
+    }
 }
