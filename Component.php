@@ -4,11 +4,11 @@
  * User: javierperezu
  */
 
-namespace jpunanua\seotools;
+namespace ryhor123\seotools;
 
 use yii;
 use yii\helpers\Json;
-use jpunanua\seotools\models\Meta;
+use ryhor123\seotools\models\Meta;
 
 class Component extends \yii\base\Component
 {
@@ -192,13 +192,13 @@ class Component extends \yii\base\Component
     }
 
     /**
-     * Register keywords meta
-     * @param string $keywords
+     * Register h1_heading meta
+     * @param string $h1_heading
      */
-    public function setKeywords($keywords)
+    public function setH1Heading($h1_heading)
     {
-        if (!empty($keywords)) {
-            Yii::$app->view->registerMetaTag(['name' => 'keywords', 'content' => $keywords], 'keywords');
+        if (!empty($h1_heading)) {
+            Yii::$app->view->registerMetaTag(['name' => 'h1_heading', 'content' => $h1_heading], 'h1_heading');
         }
         return $this;
     }
@@ -247,7 +247,7 @@ class Component extends \yii\base\Component
     {
         // Set to empty not given values
         $metadataReset = ['robots_index' => '', 'robots_follow' => '', 'author' => '',
-            'title' => '', 'description' => '', 'info' =>'','keywords' => '', 'keywords' => '', 'params_url' => ''];
+            'title' => '', 'description' => '', 'info' =>'','h1_heading' => '', 'h1_heading' => '', 'params_url' => ''];
 
         $metadata = array_merge($metadataReset, $metadata);
 
@@ -263,7 +263,7 @@ class Component extends \yii\base\Component
             ->setAuthor($metadata['author'])
             ->setTitle($metadata['title'])
             ->setDescription($metadata['description'])
-            ->setKeywords($metadata['keywords'])
+            ->setH1Heading($metadata['h1_heading'])
             ->setOpenGraphType($metadata['og:type'])
             ->setInfotext($metadata['info']);
 

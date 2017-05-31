@@ -1,6 +1,6 @@
 <?php
 
-namespace jpunanua\seotools;
+namespace ryhor123\seotools;
 
 /**
  * This is just an example.

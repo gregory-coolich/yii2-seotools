@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model jpunanua\seotools\models\base\MetaBase */
+/* @var $model ryhor123\seotools\models\base\MetaBase */
 
 $this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('seotools', 'Meta Bases'), 'url' => ['index']];
@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'robots_follow',
             'author',
             'title',
-            'keywords:ntext',
+            'h1_heading:ntext',
             'description:ntext',
             'info:ntext',
             'sitemap',

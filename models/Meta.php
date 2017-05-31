@@ -1,13 +1,13 @@
 <?php
 
-namespace jpunanua\seotools\models;
+namespace ryhor123\seotools\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
 use yii\helpers\Json;
 use yii\helpers\VarDumper;
-use jpunanua\seotools\models\base\MetaBase;
+use ryhor123\seotools\models\base\MetaBase;
 
 /**
  * @inheritdoc

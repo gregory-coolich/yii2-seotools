@@ -1,6 +1,6 @@
 <?php
 
-namespace jpunanua\seotools\models\base;
+namespace ryhor123\seotools\models\base;
 
 use Yii;
 
@@ -15,7 +15,7 @@ use Yii;
  * @property string $robots_follow
  * @property string $author
  * @property string $title
- * @property string $keywords
+ * @property string $h1_heading
  * @property string $description
  * @property string $info
  * @property integer $sitemap
@@ -41,7 +41,7 @@ class MetaBase extends \yii\db\ActiveRecord
     {
         return [
             [['hash', 'route', 'created_at', 'updated_at'], 'required'],
-            [['robots_index', 'robots_follow', 'keywords', 'description', 'info'], 'string'],
+            [['robots_index', 'robots_follow', 'h1_heading', 'description', 'info'], 'string'],
             [['sitemap'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['hash', 'route', 'author', 'title'], 'string', 'max' => 255],
@@ -64,7 +64,7 @@ class MetaBase extends \yii\db\ActiveRecord
             'robots_follow' => 'Robots Follow',
             'author' => 'Author',
             'title' => 'Title',
-            'keywords' => 'Keywords',
+            'h1_heading' => 'H1 Heading',
             'description' => 'Description',
             'sitemap' => 'Sitemap',
             'sitemap_change_freq' => 'Sitemap Change Freq',

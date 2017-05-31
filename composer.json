@@ -1,8 +1,8 @@
 {
-    "name": "jpunanua/yii2-seotools",
-    "description": "Component and module to manage unique seo title, description, keywords and unique text associated with a page",
+    "name": "ryhor123/yii2-seotools",
+    "description": "Component and module to manage unique seo title, description, h1_heading and unique text associated with a page",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","seo","management","optimize","metas","description","title"],
+    "h1_heading": ["yii2","extension","seo","management","optimize","metas","description","title"],
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "jpunanua\\seotools\\": ""
+            "ryhor123\\seotools\\": ""
         }
     }
 }

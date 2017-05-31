@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel jpunanua\seotools\models\MetaSearch */
+/* @var $searchModel ryhor123\seotools\models\MetaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('seotools', 'Meta Bases');
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'robots_follow',
             // 'author',
             // 'title',
-            // 'keywords:ntext',
+            // 'h1_heading:ntext',
             // 'description:ntext',
             // 'info:ntext',
             // 'sitemap',

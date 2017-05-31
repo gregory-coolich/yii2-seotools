@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model jpunanua\seotools\models\MetaSearch */
+/* @var $model ryhor123\seotools\models\MetaSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'title') ?>
 
-    <?php // echo $form->field($model, 'keywords') ?>
+    <?php // echo $form->field($model, 'h1_heading') ?>
 
     <?php // echo $form->field($model, 'description') ?>
 

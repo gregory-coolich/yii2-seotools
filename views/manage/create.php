@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model jpunanua\seotools\models\base\MetaBase */
+/* @var $model ryhor123\seotools\models\base\MetaBase */
 
 $this->title = Yii::t('seotools', 'Create Meta Base');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('seotools', 'Meta Bases'), 'url' => ['index']];
