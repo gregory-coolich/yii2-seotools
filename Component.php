@@ -192,18 +192,6 @@ class Component extends \yii\base\Component
     }
 
     /**
-     * Register h1_heading meta
-     * @param string $h1_heading
-     */
-    public function setH1Heading($h1_heading)
-    {
-        if (!empty($h1_heading)) {
-            Yii::$app->view->registerMetaTag(['name' => 'h1_heading', 'content' => $h1_heading], 'h1_heading');
-        }
-        return $this;
-    }
-
-    /**
      * Register Canonical url
      * @param string $url
      */
@@ -247,7 +235,7 @@ class Component extends \yii\base\Component
     {
         // Set to empty not given values
         $metadataReset = ['robots_index' => '', 'robots_follow' => '', 'author' => '',
-            'title' => '', 'description' => '', 'info' =>'','h1_heading' => '', 'h1_heading' => '', 'params_url' => ''];
+            'title' => '', 'description' => '', 'info' => '', 'params_url' => ''];
 
         $metadata = array_merge($metadataReset, $metadata);
 
@@ -263,7 +251,6 @@ class Component extends \yii\base\Component
             ->setAuthor($metadata['author'])
             ->setTitle($metadata['title'])
             ->setDescription($metadata['description'])
-            ->setH1Heading($metadata['h1_heading'])
             ->setOpenGraphType($metadata['og:type'])
             ->setInfotext($metadata['info']);
 
