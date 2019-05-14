@@ -172,7 +172,7 @@ class Component extends \yii\base\Component
     {
         if (!empty($title)) {
             Yii::$app->view->registerMetaTag(['name' => 'title', 'content' => $title], 'title');
-            Yii::$app->view->registerMetaTag(['name' => 'og:title', 'content' => $title], 'og:title');
+            Yii::$app->view->registerMetaTag(['property' => 'og:title', 'content' => $title], 'og:title');
             Yii::$app->view->title = $title;
         }
         return $this;
@@ -186,7 +186,7 @@ class Component extends \yii\base\Component
     {
         if (!empty($description)) {
             Yii::$app->view->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
-            Yii::$app->view->registerMetaTag(['name' => 'og:description', 'content' => $description], 'og:description');
+            Yii::$app->view->registerMetaTag(['property' => 'og:description', 'content' => $description], 'og:description');
         }
         return $this;
     }
@@ -207,7 +207,7 @@ class Component extends \yii\base\Component
      */
     public function setOpenGraphUrl($url)
     {
-        Yii::$app->view->registerMetaTag(['name' => 'og:url', 'content' => $url], 'og:url');
+        Yii::$app->view->registerMetaTag(['property' => 'og:url', 'content' => $url], 'og:url');
         return $this;
     }
 
