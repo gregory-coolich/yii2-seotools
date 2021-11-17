@@ -267,7 +267,6 @@ class Component extends \yii\base\Component
             $url = Yii::$app->getUrlManager()->createAbsoluteUrl($params);
 
             $this->setCanonical($url);
-
             $this->setOpenGraphUrl($url);
         }
 
