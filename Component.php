@@ -262,17 +262,11 @@ class Component extends \yii\base\Component
                 $params = $metadata['params'];
             }
 
-            if (!isset($metadata['route'])) {
-                $params[0] = Yii::$app->controller->getRoute();
-            } else {
-                $params[0] = $metadata['route'];
-            }
+            $params[0] = Yii::$app->controller->getRoute();
 
             $url = Yii::$app->getUrlManager()->createAbsoluteUrl($params);
 
-            if ($url !== Yii::$app->request->absoluteUrl) {
-                $this->setCanonical($url);
-            }
+            $this->setCanonical($url);
 
             $this->setOpenGraphUrl($url);
         }
