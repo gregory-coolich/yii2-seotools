@@ -33,12 +33,12 @@ Run the following command in Terminal for database migration:
 
 Linux/Unix:
 ```
-yii migrate/up --migrationPath=@vendor/ryhor123/yii2-seotools/migrations
+yii migrate/up --migrationPath=@vendor/gregory-coolich/yii2-seotools/migrations
 ```
 
 Windows:
 ```
-yii.bat migrate/up --migrationPath=@vendor/ryhor123/yii2-seotools/migrations
+yii.bat migrate/up --migrationPath=@vendor/gregory-coolich/yii2-seotools/migrations
 ```
 
 ###Config
@@ -48,7 +48,7 @@ A simple exmple of turning on seotool component.
 ```php
 'components' => [
         'seotools' => [
-            'class' => 'ryhor123\seotools\Component',
+            'class' => 'gregory-coolich\seotools\Component',
         ],
     ],
 ```
@@ -62,7 +62,7 @@ Simple example:
 ```php
     'modules' => [
         'seotools' => [
-            'class' => 'ryhor123\seotools\Module',
+            'class' => 'gregory-coolich\seotools\Module',
             'roles' => ['@'], // For setting access levels to the seotools interface.
         ]
     ],
@@ -86,7 +86,7 @@ Yii::$app->seotools->setMeta(['title' => \Yii::t('title','A good title for this 
 You can invalidate the cache save records calling
 
 ```php
-\yii\caching\TagDependency::invalidate(Yii::$app->cache, ryhor123\seotools\Component::CACHE_TAG);
+\yii\caching\TagDependency::invalidate(Yii::$app->cache, gregory-coolich\seotools\Component::CACHE_TAG);
 ```
 
 ###URLs
