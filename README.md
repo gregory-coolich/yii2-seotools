@@ -15,13 +15,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ryhor123/yii2-seotools "*"
+php composer.phar require --prefer-dist gregory-coolich/yii2-seotools "*"
 ```
 
 or add
 
 ```
-"ryhor123/yii2-seotools": "*"
+"gregory-coolich/yii2-seotools": "*"
 ```
 
 to the require section of your `composer.json` file.
